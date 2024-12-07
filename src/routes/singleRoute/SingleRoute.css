@@ -1,0 +1,238 @@
+
+.main_singleRoute {
+    padding: 20px;
+}
+
+.p {
+    font-size: 14px;
+    line-height: 1.3;
+    padding-top: 10px;
+}
+
+.pp {
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.pp:hover {
+    text-decoration: underline;
+}
+
+.singlRoute {
+    display: flex;
+    margin-top: 20px;
+}
+
+.singlRoute img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    transition: 1s;
+}
+
+
+
+.logo {
+    color: #333333;
+    padding-left: 60px;
+}
+
+.logo h2:last-child {
+    font-size: 20px;
+    color: #cc3333;
+    margin-top: 10px;
+}
+
+.pp__boshi {
+    color: #666666;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pp__boshi2 {
+    color: #515050;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.pp__boshi4 {
+    color: #000000;
+    font-size: 15px;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 12px;
+}
+
+.box3 {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.box__1 {
+    border: 1px solid #ddd;
+    width: 140px;
+    height: 37px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.p_titel {
+    color: #06a452;
+    cursor: pointer;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+}
+.narxi{
+    width: 250px;
+    height: 50px;
+    padding-top: 13px;
+    color: #000000;
+    font-size: 15px;
+    border-radius: 9px 0 0 9px;
+    background: yellow;
+}
+.plo{
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: 400;
+}
+.nomi{
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    background: dodgerblue;
+    color: #000000;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.nomi:hover{
+    color: white;
+    background: blue;
+}
+
+
+
+
+
+
+.button {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background: #EFF2F5;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    background: #ddd;
+}
+
+
+
+@media screen and (max-width:1050px) {
+    .singlRoute img{
+        width: 300px;
+        height: 400px;
+
+    }
+    .singlRoute{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0 10%;
+        width: 2px;
+        height: 2px;
+    }
+    .container .pp{
+        padding: 0 20%;
+    }
+    
+    .logo{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0 10%;
+        width: 4px;
+        height: 4px;
+    }
+    .logo__2{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0 10%;
+        width: 4px;
+        height: 4px;
+    }
+    .hello button .counter{
+        width: 200px;
+        font-size: 14px;
+
+    }
+    .button{
+        width: 250px;
+        height: 30px;
+        margin: auto;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .narxi{
+        width: 250px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .plo{
+        font-size: 12px;
+    }
+    .nomi{
+        font-size: 12px;
+    }
+    .box__1{
+        flex-wrap: wrap;
+    }
+    .the{
+        flex-wrap: wrap;
+    }
+  }
+  

@@ -1,0 +1,182 @@
+.photo img {
+  display: block;
+  margin: auto;
+  width: 90%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.banner {
+  display: flex;
+
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+.banner-card {
+  width: 190px;
+  min-height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+
+}
+
+.banner-card-img-wrapper {
+  width: 100%;
+  height: 200px;
+
+  position: relative;
+  margin: 3% auto;
+}
+
+.banner-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.banner-card-body {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  flex: 12;
+  align-items: flex-start;
+}
+
+.banner-card-title {
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+  overflow: hidden;
+
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.banner-card-body mark {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 10px 0 20px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.banner-card-price-item del {
+  font-size: 14px;
+  color: #555;
+}
+
+.banner-card-price-item p {
+  font-weight: 520;
+}
+
+.banner-card-price-wrapper {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+}
+
+.banner-card-price-icon {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.banner-card-price-icon p {
+  color: rgb(255, 136, 0);
+  font-size: 18px;
+
+}
+
+.banner-card-price-icon span {
+  font-size: 15px;
+}
+
+.banner-card-heart p {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  font-size: 25px;
+  font-weight: 1020;
+  color: rgb(38, 38, 38);
+}
+
+
+.banner-card-body button {
+  width: 180px;
+  height: 30px;
+  background-color: #006BFF;
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo img {
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-top: 100px;
+    border-radius: 10px;
+  }
+
+  .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .banner-card {
+    width: calc(100% - 6px);
+  }
+
+  .banner-card-img {
+    width: 100%;
+    height: 230px;
+  }
+
+  .banner-card {
+    width: 195px;
+    min-height: 360px;
+  }
+
+  .photo img {
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-top: 100px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 430px) {
+  .banner-card-body mark {
+    padding: 2px 3px;
+  }
+}
