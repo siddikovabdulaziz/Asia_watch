@@ -321,23 +321,41 @@
       font-size: 12px; /* Matn o'lchamini moslashtirish */
     }
   }
-  
+ @media (max-width:410px) {
+  .navbar-logo-img {
+    width: 50px; 
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .navbar-search input {
+    font-size: 8px; /* Matn o'lchamini moslashtirish */
+    width: 40px;
+  }
+
+  .navbar-search button {
+    font-size: 8px; /* Tugma matnini moslashtirish */
+    width: 40px; /* Tugma kengligini yanada kichraytirish */
+  }
+ } 
+
   @media (max-width: 380px) {
     .navbar-logo-img {
-      width: 70px; /* Yana kichraytirish */
+      width: 50px; 
+      font-size: 15px;
+      margin-left: 5px;
     }
   
-    .navbar-search {
-      max-width: calc(100% - 80px); /* HTML tashqarisiga chiqishni oldini olish */
-    }
-  
+    /* .navbar-search {
+      max-width: calc(80% - 80px); /* HTML tashqarisiga chiqishni oldini olish */
+    
     .navbar-search input {
-      font-size: 10px; /* Matn o'lchamini moslashtirish */
+      font-size: 8px; /* Matn o'lchamini moslashtirish */
+      width: 40px;
     }
   
     .navbar-search button {
-      font-size: 10px; /* Tugma matnini moslashtirish */
-      width: 50px; /* Tugma kengligini yanada kichraytirish */
+      font-size: 8px; /* Tugma matnini moslashtirish */
+      width: 40px; /* Tugma kengligini yanada kichraytirish */
     }
   }
     

@@ -170,6 +170,13 @@
   .product-card-iconn {
     display: none;
   }
+  .product-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {
