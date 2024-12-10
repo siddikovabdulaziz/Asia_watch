@@ -9,10 +9,14 @@
     background: white;
     height: 60px;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
+    margin: auto;
+    gap: 60px;
   }
-
+  .navbar-logo-link{
+    display: flex;
+    justify-content: center;
+  }
   .navbar-logo-collection-wrapper {
     display: flex;
     align-items: center;
@@ -227,7 +231,19 @@
       margin-right: 30px;
     }
   }
-
+  @media (max-width: 580px) {
+    .navbar-search{
+      width: 300px;
+    }
+    .navbar{
+      gap: 20px;
+    }
+  }
+  @media (max-width: 540px) {
+    .navbar-search{
+      width: 250px;
+    }
+  }
   @media (max-width:510px) {
     .navbar-search .in1{
       width: 100px;
