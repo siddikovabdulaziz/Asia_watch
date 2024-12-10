@@ -1,12 +1,13 @@
 import React, { useRef, useState } from "react";
 import "./CardProduct.css";
 
-const TOKEN = "7466709140:AAG1smQg6EgZ4fjR8AvguAyBTipBjeiuG3M"
-const USER_ID = "6402180079"
-const CHAT_IDD = "-1002186916994"
 
-//https://api.telegram.org/bot7466709140:AAG1smQg6EgZ4fjR8AvguAyBTipBjeiuG3M/getUpdates
-//https://api.telegram.org/bot[your_token]/sendMessage?chat_id=[your chat_id]&parse_mode=html
+const TOKEN = "7950200027:AAHdV6iTlPbvENGJHZP06yPOjhDp_kAqVKM"
+// const USER_ID = "6402180079"
+const CHAT_IDD = "1941557677"
+
+//https://api.telegram.org/bot7950200027:AAHdV6iTlPbvENGJHZP06yPOjhDp_kAqVKM/getUpdates
+//https://api.telegram.org/bot[7950200027:AAHdV6iTlPbvENGJHZP06yPOjhDp_kAqVKM/sendMessage?chat_id=[1941557677]&parse_mode=html
 
 function CardForm({ data }) {
   const [fullName, setfullName] = useState("");
@@ -26,17 +27,15 @@ function CardForm({ data }) {
     data.forEach((item) => {
       textt += ` Narxi : ${item.price}%0A%0A`;
       textt += `Soni : ${item.quantity}%0A%0A`;
-      textt +=`Maxsulot nomi: ${item.title}%0A%0A`;
+      textt += `Maxsulot nomi: ${item.title}%0A%0A`;
     })
 
 
     let urlss =
       `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_IDD}&text=${textt}&parse_mode=html`
-    let api = new XMLHttpRequest()
-    api.open("GET", urlss, true)
-    api.send(
-
-    )
+    fetch(urlss).then((data)=>data.json()).then((data)=>{
+      console.log(data);
+    })
   }
 
   return (
